@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 
 class AccountSignUp extends StatelessWidget {
   const AccountSignUp({super.key});
@@ -9,13 +10,16 @@ class AccountSignUp extends StatelessWidget {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Text("Don't have an account?", style: TextStyle(color: Colors.grey)),
+          const Text("Don't have an account?",
+              style: TextStyle(color: Colors.grey)),
           TextButton(
-            onPressed: () {},
+            onPressed: () {
+              context.push("/signUp");
+            },
             child: Text(
               "Sign up",
               style: TextStyle(
-                  color: Colors.blue.shade500, fontWeight: FontWeight.bold),
+                  color: Colors.blue.shade300, fontWeight: FontWeight.bold),
             ),
           )
         ],

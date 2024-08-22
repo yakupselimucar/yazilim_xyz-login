@@ -20,7 +20,7 @@ class RememberForgot extends StatelessWidget {
           child: Text(
             "Forgot password?",
             style: TextStyle(
-                color: Colors.blue.shade500, fontWeight: FontWeight.bold),
+                color: Colors.blue.shade300, fontWeight: FontWeight.bold),
           ),
         )
       ],
