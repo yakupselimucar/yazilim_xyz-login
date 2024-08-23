@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 
-class buildTextField extends StatelessWidget {
+class BuildCustomTextField extends StatelessWidget {
   final String text;
   final IconData icon;
-  const buildTextField({
+  const BuildCustomTextField({
     super.key,
     this.text = "Name",
     this.icon = Icons.drive_file_rename_outline,

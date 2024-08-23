@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-class LoginButton extends StatelessWidget {
+class CustomButton extends StatelessWidget {
   final String text;
   final Color color;
   final Color textColor;
@@ -8,7 +8,7 @@ class LoginButton extends StatelessWidget {
   final double width;
   final VoidCallback onPressed;
 
-  LoginButton({
+  CustomButton({
     super.key,
     this.text = "Login",
     this.color = const Color(0xFF55b8d9),

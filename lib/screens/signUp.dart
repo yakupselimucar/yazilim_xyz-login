@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
 import '../components/build_text_field.dart';
-import '../components/login_button.dart';
+import '../components/custom_button.dart';
 import '../widgets/account_signUp.dart';
 import '../widgets/fastLogin_icons.dart';
 import '../widgets/text_field.dart';
@@ -21,7 +21,7 @@ class SignUpScreen extends StatelessWidget {
         backgroundColor: Colors.transparent,
         elevation: 0,
         leading: IconButton(
-          icon: Icon(Icons.arrow_back, color: Colors.black),
+          icon: const Icon(Icons.arrow_back, color: Colors.black),
           onPressed: () {
             context.go("/");
           },
@@ -39,15 +39,15 @@ class SignUpScreen extends StatelessWidget {
                 width: screenWidth * 0.66,
                 height: screenHeight * 0.22,
                 child: Image.asset(
-                  "assets/images/save_register2.png",
+                  "assets/images/save_register.png",
                 ),
               ),
               SizedBox(height: screenHeight * 0.03),
-              const buildTextField(),
+              const BuildCustomTextField(),
               const SizedBox(height: 20),
               const BuildTextField(),
               SizedBox(height: screenHeight * 0.05),
-              LoginButton(
+              CustomButton(
                 text: "Register",
                 onPressed: () {},
                 width: screenHeight * 0.90,

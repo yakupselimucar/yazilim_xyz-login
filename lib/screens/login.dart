@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
-import '../components/login_button.dart';
+import '../components/custom_button.dart';
 import '../widgets/account_signUp.dart';
 import '../widgets/fastLogin_icons.dart';
 import '../widgets/remember_forgotPassword.dart';
@@ -34,7 +34,7 @@ class LoginScreen extends StatelessWidget {
               SizedBox(height: screenHeight * 0.01),
               const RememberForgot(),
               SizedBox(height: screenHeight * 0.04),
-              LoginButton(
+              CustomButton(
                 onPressed: () {},
                 width: screenHeight * 0.90,
               ),
