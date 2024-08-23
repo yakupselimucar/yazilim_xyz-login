@@ -21,7 +21,7 @@ class BuildCustomTextField extends StatelessWidget {
           BoxShadow(
             color: Colors.black.withOpacity(0.15),
             spreadRadius: 0,
-            blurRadius: 20, // Increased blur radius
+            blurRadius: 20,
             offset: const Offset(0, 4),
           )
         ],
@@ -32,7 +32,7 @@ class BuildCustomTextField extends StatelessWidget {
             children: [
               Icon(icon),
               const SizedBox(width: 10),
-              Text(text, style: TextStyle(color: Colors.grey)),
+              Text(text, style: const TextStyle(color: Colors.grey)),
             ],
           ),
           border: InputBorder.none,

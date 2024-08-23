@@ -4,6 +4,7 @@ import 'package:go_router/go_router.dart';
 import '../components/build_text_field.dart';
 import '../components/custom_button.dart';
 import '../widgets/account_signUp.dart';
+import '../widgets/allow_agreement.dart';
 import '../widgets/fastLogin_icons.dart';
 import '../widgets/text_field.dart';
 
@@ -34,7 +35,7 @@ class SignUpScreen extends StatelessWidget {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.start,
             children: [
-              SizedBox(height: screenHeight * 0.03),
+              SizedBox(height: screenHeight * 0.01),
               SizedBox(
                 width: screenWidth * 0.66,
                 height: screenHeight * 0.22,
@@ -46,13 +47,15 @@ class SignUpScreen extends StatelessWidget {
               const BuildCustomTextField(),
               const SizedBox(height: 20),
               const BuildTextField(),
-              SizedBox(height: screenHeight * 0.05),
+              SizedBox(height: screenHeight * 0.01),
+              const AllowAgreement(),
+              SizedBox(height: screenHeight * 0.02),
               CustomButton(
                 text: "Register",
                 onPressed: () {},
                 width: screenHeight * 0.90,
               ),
-              SizedBox(height: screenHeight * 0.03),
+              SizedBox(height: screenHeight * 0.04),
               const FastLoginIcons(),
               SizedBox(height: screenHeight * 0.01),
               AccountSignUp(
