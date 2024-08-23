@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 
+import '../components/login_button.dart';
 import '../widgets/account_signUp.dart';
 import '../widgets/fastLogin_icons.dart';
-import '../widgets/login_button.dart';
 import '../widgets/remember_forgotPassword.dart';
 import '../widgets/text_field.dart';
 
@@ -29,15 +30,22 @@ class LoginScreen extends StatelessWidget {
                 child: Image.asset("assets/images/swim_login_welcome.png"),
               ),
               SizedBox(height: screenHeight * 0.05),
-              BuildTextField(),
+              const BuildTextField(),
               SizedBox(height: screenHeight * 0.01),
-              RememberForgot(),
+              const RememberForgot(),
               SizedBox(height: screenHeight * 0.04),
-              LoginButton(),
+              LoginButton(
+                onPressed: () {},
+                width: screenHeight * 0.90,
+              ),
               SizedBox(height: screenHeight * 0.03),
-              AccountSignUp(),
+              AccountSignUp(
+                textButtonOnPressed: () {
+                  context.go("/signUp");
+                },
+              ),
               SizedBox(height: screenHeight * 0.02),
-              FastLoginIcons(),
+              const FastLoginIcons(),
             ],
           ),
         ),

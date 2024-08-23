@@ -20,7 +20,7 @@ class BuildTextField extends StatelessWidget {
                 color: Colors.black.withOpacity(0.15),
                 spreadRadius: 0,
                 blurRadius: 20, // Increased blur radius
-                offset: Offset(0, 4),
+                offset: const Offset(0, 4),
               )
             ],
           ),
@@ -36,7 +36,7 @@ class BuildTextField extends StatelessWidget {
                 border: InputBorder.none),
           ),
         ),
-        const SizedBox(height: 15),
+        const SizedBox(height: 20),
         Container(
           padding: const EdgeInsets.symmetric(horizontal: 15, vertical: 6),
           decoration: BoxDecoration(

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 import 'package:yazilim_xyz/widgets/checkbox.dart';
 
 class RememberForgot extends StatelessWidget {
@@ -16,7 +17,9 @@ class RememberForgot extends StatelessWidget {
           ],
         ),
         TextButton(
-          onPressed: () {},
+          onPressed: () {
+            GoRouter.of(context).go("/forgot");
+          },
           child: Text(
             "Forgot password?",
             style: TextStyle(

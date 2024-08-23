@@ -1,8 +1,16 @@
 import 'package:flutter/material.dart';
-import 'package:go_router/go_router.dart';
 
 class AccountSignUp extends StatelessWidget {
-  const AccountSignUp({super.key});
+  final String text;
+  final String ButtonText;
+  final VoidCallback textButtonOnPressed;
+
+  AccountSignUp({
+    super.key,
+    this.text = "Don't have an account?",
+    this.ButtonText = "Sign up",
+    required this.textButtonOnPressed,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -10,14 +18,14 @@ class AccountSignUp extends StatelessWidget {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          const Text("Don't have an account?",
-              style: TextStyle(color: Colors.grey)),
+          Text(text, style: TextStyle(color: Colors.grey)),
           TextButton(
             onPressed: () {
-              context.push("/signUp");
+              //context.push("/signUp");
+              textButtonOnPressed();
             },
             child: Text(
-              "Sign up",
+              ButtonText,
               style: TextStyle(
                   color: Colors.blue.shade300, fontWeight: FontWeight.bold),
             ),
